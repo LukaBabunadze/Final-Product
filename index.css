@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 , h3, h4 {
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+input {
+  border: none;
+  border-bottom: 1 px solid black;
+  background: transparent;
+  outline: none;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: dodgerblue;
+}
+
+a:hover {
+  color: #f2953f;
+}
+
+a:active {
+  color: black;
+}
+
+/*მთავარი ნაწილი*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*header*/
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+
+  background-color: #fafafa;
+  height: 50px;
+}
+.header__logo {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+ .header__settings {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: space-between;
+  padding-right: 10px;
+}
+.header__settings--items {
+  height: 3px;
+  width: 30px;
+  background-color: #545453;
+}
+
+/*main*/
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main__section--first {
+  height: 250px;
+  width: 100%;
+  background-image: url(assets/travel.jpg);
+  background-size: cover;
+  background-position: 100%;
+
+}
+.main__section--second {
+  color: #f5f5f5;
+  padding: 30px 20px;
+  background-color: #2b2b2b;
+}
+.main__section--third {
+  height: 250px;
+  width: 100%;
+  background-image: url(assets/travel2.jpg);
+  background-size: cover;
+  background-position: 100%;
+
+}
+
+
+.main__section--text {
+  text-align: justify;
+  font-size: 14px;
+}
+.main__section--header {
+  font-size: 18px;
+}
+.main__section--link {
+  font-size: 14px;
+}
+
+.main__section--fourth {
+  background-color: #fafafa;
+  padding: 70px 20px;
+
+}
+
+/*footer*/
+.footer {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2b2b2b;
+  color: #f5f5f5;
+}
+.nav__list {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__nav--items {
+  padding: 5px;
+}
+
+/*responsive*/
+
+@media screen and (min-width:800px) {
+  .main__div {
+    display: flex;
+    flex-flow: row wrap;
+  }
+} /*ეკა დავალება შეცდომით გავიგე, მეგონა ორი ვებსაიტი უნდა აგვეწყო ერთჳ მობაილისთვის ერთიც
+დიდი ზომის ეკრანებისთვის, ხოდა მე ჯერ მობაილი ავაწყე, ახალ კიდევ ვერაფრით ვშველი რომ დიდი ზომის
+ეკრანებზე სხვანაირად გამოჩნდეს :/*/
